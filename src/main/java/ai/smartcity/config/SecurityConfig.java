@@ -1,6 +1,5 @@
 package ai.smartcity.config;
 
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -16,25 +15,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-    private final JwtAuthFilter jwtAuthFilter;
-    private final UserDetailsService uds;
-
-
-    public SecurityConfig(JwtAuthFilter jwtAuthFilter, UserDetailsService uds) {
-        this.jwtAuthFilter = jwtAuthFilter;
-        this.uds = uds;
-    }
-
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http, JwtAuthFilter jwtAuthFilter) throws Exception {
         http
                 .csrf(csrf -> csrf.disable())
-                .headers(h -> h.frameOptions(f -> f.disable())) // для H2 console
+                .headers(h -> h.frameOptions(f -> f.disable())) // H2 console
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(reg -> reg
                         .requestMatchers("/auth/register", "/auth/login", "/h2/**", "/api/media/files/**").permitAll()
@@ -44,19 +33,16 @@ public class SecurityConfig {
         return http.build();
     }
 
-
     @Bean
     public PasswordEncoder passwordEncoder() { return new BCryptPasswordEncoder(); }
 
-
     @Bean
-    public AuthenticationProvider authenticationProvider() {
+    public AuthenticationProvider authenticationProvider(UserDetailsService uds, PasswordEncoder encoder) {
         DaoAuthenticationProvider p = new DaoAuthenticationProvider();
         p.setUserDetailsService(uds);
-        p.setPasswordEncoder(passwordEncoder());
+        p.setPasswordEncoder(encoder);
         return p;
     }
-
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration cfg) throws Exception {

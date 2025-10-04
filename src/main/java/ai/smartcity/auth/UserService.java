@@ -1,8 +1,6 @@
 package ai.smartcity.auth;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -14,7 +12,6 @@ import org.springframework.stereotype.Service;
 public class UserService implements UserDetailsService {
     private final UserRepository repo;
     private final PasswordEncoder encoder;
-    private final AuthenticationManager authManager;
 
     public void register(String username, String password){
         if (repo.findByUsername(username).isPresent()){
@@ -26,15 +23,9 @@ public class UserService implements UserDetailsService {
         repo.save(u);
     }
 
-    public User authenticate(String username, String password){
-        authManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
-        return repo.findByUsername(username).orElseThrow(
-                () -> new UsernameNotFoundException("User not found"));
-    }
-
     public User findByUsername(String username){
-        return repo.findByUsername(username).orElseThrow(
-                () -> new UsernameNotFoundException("User not found"));
+        return repo.findByUsername(username)
+                .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
 
     @Override

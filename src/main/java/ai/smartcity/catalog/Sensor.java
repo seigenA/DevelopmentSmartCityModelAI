@@ -16,7 +16,9 @@ public class Sensor {
 
     @NotBlank private String name;          // строка
     @NotBlank private String type;          // строка (e.g. AIR_QUALITY, TRAFFIC)
-    @PositiveOrZero private int year;       // число (год установки)
+    @PositiveOrZero
+    @Column(name = "install_year")   // <-- главное: задать имя столбца
+    private int year;       // число (год установки)
     @PastOrPresent private LocalDate installedAt; // дата
     @Column(length = 5000)
     private String description;             // текст
