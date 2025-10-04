@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "category": "traffic",
+    "question_en": "Sample question 1 about traffic?",
+    "answer_en": "This is an English answer explaining concept 1 in the traffic category.",
+    "question_ru": "Пример вопроса 1 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 1 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag1"
+    ],
+    "examples": "Example case 1 for traffic.",
+    "sources": "https://example.com/traffic/1"
+  },
+  {
+    "id": 2,
+    "category": "energy",
+    "question_en": "Sample question 2 about energy?",
+    "answer_en": "This is an English answer explaining concept 2 in the energy category.",
+    "question_ru": "Пример вопроса 2 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 2 в категории energy.",
+    "tags": [
+      "energy",
+      "tag2"
+    ],
+    "examples": "Example case 2 for energy.",
+    "sources": "https://example.com/energy/2"
+  },
+  {
+    "id": 3,
+    "category": "iot",
+    "question_en": "Sample question 3 about iot?",
+    "answer_en": "This is an English answer explaining concept 3 in the iot category.",
+    "question_ru": "Пример вопроса 3 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 3 в категории iot.",
+    "tags": [
+      "iot",
+      "tag3"
+    ],
+    "examples": "Example case 3 for iot.",
+    "sources": "https://example.com/iot/3"
+  },
+  {
+    "id": 4,
+    "category": "ecology",
+    "question_en": "Sample question 4 about ecology?",
+    "answer_en": "This is an English answer explaining concept 4 in the ecology category.",
+    "question_ru": "Пример вопроса 4 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 4 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag4"
+    ],
+    "examples": "Example case 4 for ecology.",
+    "sources": "https://example.com/ecology/4"
+  },
+  {
+    "id": 5,
+    "category": "transport",
+    "question_en": "Sample question 5 about transport?",
+    "answer_en": "This is an English answer explaining concept 5 in the transport category.",
+    "question_ru": "Пример вопроса 5 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 5 в категории transport.",
+    "tags": [
+      "transport",
+      "tag5"
+    ],
+    "examples": "Example case 5 for transport.",
+    "sources": "https://example.com/transport/5"
+  },
+  {
+    "id": 6,
+    "category": "safety",
+    "question_en": "Sample question 6 about safety?",
+    "answer_en": "This is an English answer explaining concept 6 in the safety category.",
+    "question_ru": "Пример вопроса 6 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 6 в категории safety.",
+    "tags": [
+      "safety",
+      "tag6"
+    ],
+    "examples": "Example case 6 for safety.",
+    "sources": "https://example.com/safety/6"
+  },
+  {
+    "id": 7,
+    "category": "health",
+    "question_en": "Sample question 7 about health?",
+    "answer_en": "This is an English answer explaining concept 7 in the health category.",
+    "question_ru": "Пример вопроса 7 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 7 в категории health.",
+    "tags": [
+      "health",
+      "tag7"
+    ],
+    "examples": "Example case 7 for health.",
+    "sources": "https://example.com/health/7"
+  },
+  {
+    "id": 8,
+    "category": "education",
+    "question_en": "Sample question 8 about education?",
+    "answer_en": "This is an English answer explaining concept 8 in the education category.",
+    "question_ru": "Пример вопроса 8 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 8 в категории education.",
+    "tags": [
+      "education",
+      "tag8"
+    ],
+    "examples": "Example case 8 for education.",
+    "sources": "https://example.com/education/8"
+  },
+  {
+    "id": 9,
+    "category": "housing",
+    "question_en": "Sample question 9 about housing?",
+    "answer_en": "This is an English answer explaining concept 9 in the housing category.",
+    "question_ru": "Пример вопроса 9 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 9 в категории housing.",
+    "tags": [
+      "housing",
+      "tag9"
+    ],
+    "examples": "Example case 9 for housing.",
+    "sources": "https://example.com/housing/9"
+  },
+  {
+    "id": 10,
+    "category": "future",
+    "question_en": "Sample question 10 about future?",
+    "answer_en": "This is an English answer explaining concept 10 in the future category.",
+    "question_ru": "Пример вопроса 10 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 10 в категории future.",
+    "tags": [
+      "future",
+      "tag10"
+    ],
+    "examples": "Example case 10 for future.",
+    "sources": "https://example.com/future/10"
+  },
+  {
+    "id": 11,
+    "category": "traffic",
+    "question_en": "Sample question 11 about traffic?",
+    "answer_en": "This is an English answer explaining concept 11 in the traffic category.",
+    "question_ru": "Пример вопроса 11 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 11 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag11"
+    ],
+    "examples": "Example case 11 for traffic.",
+    "sources": "https://example.com/traffic/11"
+  },
+  {
+    "id": 12,
+    "category": "energy",
+    "question_en": "Sample question 12 about energy?",
+    "answer_en": "This is an English answer explaining concept 12 in the energy category.",
+    "question_ru": "Пример вопроса 12 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 12 в категории energy.",
+    "tags": [
+      "energy",
+      "tag12"
+    ],
+    "examples": "Example case 12 for energy.",
+    "sources": "https://example.com/energy/12"
+  },
+  {
+    "id": 13,
+    "category": "iot",
+    "question_en": "Sample question 13 about iot?",
+    "answer_en": "This is an English answer explaining concept 13 in the iot category.",
+    "question_ru": "Пример вопроса 13 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 13 в категории iot.",
+    "tags": [
+      "iot",
+      "tag13"
+    ],
+    "examples": "Example case 13 for iot.",
+    "sources": "https://example.com/iot/13"
+  },
+  {
+    "id": 14,
+    "category": "ecology",
+    "question_en": "Sample question 14 about ecology?",
+    "answer_en": "This is an English answer explaining concept 14 in the ecology category.",
+    "question_ru": "Пример вопроса 14 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 14 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag14"
+    ],
+    "examples": "Example case 14 for ecology.",
+    "sources": "https://example.com/ecology/14"
+  },
+  {
+    "id": 15,
+    "category": "transport",
+    "question_en": "Sample question 15 about transport?",
+    "answer_en": "This is an English answer explaining concept 15 in the transport category.",
+    "question_ru": "Пример вопроса 15 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 15 в категории transport.",
+    "tags": [
+      "transport",
+      "tag15"
+    ],
+    "examples": "Example case 15 for transport.",
+    "sources": "https://example.com/transport/15"
+  },
+  {
+    "id": 16,
+    "category": "safety",
+    "question_en": "Sample question 16 about safety?",
+    "answer_en": "This is an English answer explaining concept 16 in the safety category.",
+    "question_ru": "Пример вопроса 16 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 16 в категории safety.",
+    "tags": [
+      "safety",
+      "tag16"
+    ],
+    "examples": "Example case 16 for safety.",
+    "sources": "https://example.com/safety/16"
+  },
+  {
+    "id": 17,
+    "category": "health",
+    "question_en": "Sample question 17 about health?",
+    "answer_en": "This is an English answer explaining concept 17 in the health category.",
+    "question_ru": "Пример вопроса 17 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 17 в категории health.",
+    "tags": [
+      "health",
+      "tag17"
+    ],
+    "examples": "Example case 17 for health.",
+    "sources": "https://example.com/health/17"
+  },
+  {
+    "id": 18,
+    "category": "education",
+    "question_en": "Sample question 18 about education?",
+    "answer_en": "This is an English answer explaining concept 18 in the education category.",
+    "question_ru": "Пример вопроса 18 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 18 в категории education.",
+    "tags": [
+      "education",
+      "tag18"
+    ],
+    "examples": "Example case 18 for education.",
+    "sources": "https://example.com/education/18"
+  },
+  {
+    "id": 19,
+    "category": "housing",
+    "question_en": "Sample question 19 about housing?",
+    "answer_en": "This is an English answer explaining concept 19 in the housing category.",
+    "question_ru": "Пример вопроса 19 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 19 в категории housing.",
+    "tags": [
+      "housing",
+      "tag19"
+    ],
+    "examples": "Example case 19 for housing.",
+    "sources": "https://example.com/housing/19"
+  },
+  {
+    "id": 20,
+    "category": "future",
+    "question_en": "Sample question 20 about future?",
+    "answer_en": "This is an English answer explaining concept 20 in the future category.",
+    "question_ru": "Пример вопроса 20 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 20 в категории future.",
+    "tags": [
+      "future",
+      "tag20"
+    ],
+    "examples": "Example case 20 for future.",
+    "sources": "https://example.com/future/20"
+  },
+  {
+    "id": 21,
+    "category": "traffic",
+    "question_en": "Sample question 21 about traffic?",
+    "answer_en": "This is an English answer explaining concept 21 in the traffic category.",
+    "question_ru": "Пример вопроса 21 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 21 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag21"
+    ],
+    "examples": "Example case 21 for traffic.",
+    "sources": "https://example.com/traffic/21"
+  },
+  {
+    "id": 22,
+    "category": "energy",
+    "question_en": "Sample question 22 about energy?",
+    "answer_en": "This is an English answer explaining concept 22 in the energy category.",
+    "question_ru": "Пример вопроса 22 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 22 в категории energy.",
+    "tags": [
+      "energy",
+      "tag22"
+    ],
+    "examples": "Example case 22 for energy.",
+    "sources": "https://example.com/energy/22"
+  },
+  {
+    "id": 23,
+    "category": "iot",
+    "question_en": "Sample question 23 about iot?",
+    "answer_en": "This is an English answer explaining concept 23 in the iot category.",
+    "question_ru": "Пример вопроса 23 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 23 в категории iot.",
+    "tags": [
+      "iot",
+      "tag23"
+    ],
+    "examples": "Example case 23 for iot.",
+    "sources": "https://example.com/iot/23"
+  },
+  {
+    "id": 24,
+    "category": "ecology",
+    "question_en": "Sample question 24 about ecology?",
+    "answer_en": "This is an English answer explaining concept 24 in the ecology category.",
+    "question_ru": "Пример вопроса 24 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 24 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag24"
+    ],
+    "examples": "Example case 24 for ecology.",
+    "sources": "https://example.com/ecology/24"
+  },
+  {
+    "id": 25,
+    "category": "transport",
+    "question_en": "Sample question 25 about transport?",
+    "answer_en": "This is an English answer explaining concept 25 in the transport category.",
+    "question_ru": "Пример вопроса 25 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 25 в категории transport.",
+    "tags": [
+      "transport",
+      "tag25"
+    ],
+    "examples": "Example case 25 for transport.",
+    "sources": "https://example.com/transport/25"
+  },
+  {
+    "id": 26,
+    "category": "safety",
+    "question_en": "Sample question 26 about safety?",
+    "answer_en": "This is an English answer explaining concept 26 in the safety category.",
+    "question_ru": "Пример вопроса 26 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 26 в категории safety.",
+    "tags": [
+      "safety",
+      "tag26"
+    ],
+    "examples": "Example case 26 for safety.",
+    "sources": "https://example.com/safety/26"
+  },
+  {
+    "id": 27,
+    "category": "health",
+    "question_en": "Sample question 27 about health?",
+    "answer_en": "This is an English answer explaining concept 27 in the health category.",
+    "question_ru": "Пример вопроса 27 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 27 в категории health.",
+    "tags": [
+      "health",
+      "tag27"
+    ],
+    "examples": "Example case 27 for health.",
+    "sources": "https://example.com/health/27"
+  },
+  {
+    "id": 28,
+    "category": "education",
+    "question_en": "Sample question 28 about education?",
+    "answer_en": "This is an English answer explaining concept 28 in the education category.",
+    "question_ru": "Пример вопроса 28 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 28 в категории education.",
+    "tags": [
+      "education",
+      "tag28"
+    ],
+    "examples": "Example case 28 for education.",
+    "sources": "https://example.com/education/28"
+  },
+  {
+    "id": 29,
+    "category": "housing",
+    "question_en": "Sample question 29 about housing?",
+    "answer_en": "This is an English answer explaining concept 29 in the housing category.",
+    "question_ru": "Пример вопроса 29 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 29 в категории housing.",
+    "tags": [
+      "housing",
+      "tag29"
+    ],
+    "examples": "Example case 29 for housing.",
+    "sources": "https://example.com/housing/29"
+  },
+  {
+    "id": 30,
+    "category": "future",
+    "question_en": "Sample question 30 about future?",
+    "answer_en": "This is an English answer explaining concept 30 in the future category.",
+    "question_ru": "Пример вопроса 30 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 30 в категории future.",
+    "tags": [
+      "future",
+      "tag30"
+    ],
+    "examples": "Example case 30 for future.",
+    "sources": "https://example.com/future/30"
+  },
+  {
+    "id": 31,
+    "category": "traffic",
+    "question_en": "Sample question 31 about traffic?",
+    "answer_en": "This is an English answer explaining concept 31 in the traffic category.",
+    "question_ru": "Пример вопроса 31 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 31 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag31"
+    ],
+    "examples": "Example case 31 for traffic.",
+    "sources": "https://example.com/traffic/31"
+  },
+  {
+    "id": 32,
+    "category": "energy",
+    "question_en": "Sample question 32 about energy?",
+    "answer_en": "This is an English answer explaining concept 32 in the energy category.",
+    "question_ru": "Пример вопроса 32 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 32 в категории energy.",
+    "tags": [
+      "energy",
+      "tag32"
+    ],
+    "examples": "Example case 32 for energy.",
+    "sources": "https://example.com/energy/32"
+  },
+  {
+    "id": 33,
+    "category": "iot",
+    "question_en": "Sample question 33 about iot?",
+    "answer_en": "This is an English answer explaining concept 33 in the iot category.",
+    "question_ru": "Пример вопроса 33 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 33 в категории iot.",
+    "tags": [
+      "iot",
+      "tag33"
+    ],
+    "examples": "Example case 33 for iot.",
+    "sources": "https://example.com/iot/33"
+  },
+  {
+    "id": 34,
+    "category": "ecology",
+    "question_en": "Sample question 34 about ecology?",
+    "answer_en": "This is an English answer explaining concept 34 in the ecology category.",
+    "question_ru": "Пример вопроса 34 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 34 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag34"
+    ],
+    "examples": "Example case 34 for ecology.",
+    "sources": "https://example.com/ecology/34"
+  },
+  {
+    "id": 35,
+    "category": "transport",
+    "question_en": "Sample question 35 about transport?",
+    "answer_en": "This is an English answer explaining concept 35 in the transport category.",
+    "question_ru": "Пример вопроса 35 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 35 в категории transport.",
+    "tags": [
+      "transport",
+      "tag35"
+    ],
+    "examples": "Example case 35 for transport.",
+    "sources": "https://example.com/transport/35"
+  },
+  {
+    "id": 36,
+    "category": "safety",
+    "question_en": "Sample question 36 about safety?",
+    "answer_en": "This is an English answer explaining concept 36 in the safety category.",
+    "question_ru": "Пример вопроса 36 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 36 в категории safety.",
+    "tags": [
+      "safety",
+      "tag36"
+    ],
+    "examples": "Example case 36 for safety.",
+    "sources": "https://example.com/safety/36"
+  },
+  {
+    "id": 37,
+    "category": "health",
+    "question_en": "Sample question 37 about health?",
+    "answer_en": "This is an English answer explaining concept 37 in the health category.",
+    "question_ru": "Пример вопроса 37 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 37 в категории health.",
+    "tags": [
+      "health",
+      "tag37"
+    ],
+    "examples": "Example case 37 for health.",
+    "sources": "https://example.com/health/37"
+  },
+  {
+    "id": 38,
+    "category": "education",
+    "question_en": "Sample question 38 about education?",
+    "answer_en": "This is an English answer explaining concept 38 in the education category.",
+    "question_ru": "Пример вопроса 38 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 38 в категории education.",
+    "tags": [
+      "education",
+      "tag38"
+    ],
+    "examples": "Example case 38 for education.",
+    "sources": "https://example.com/education/38"
+  },
+  {
+    "id": 39,
+    "category": "housing",
+    "question_en": "Sample question 39 about housing?",
+    "answer_en": "This is an English answer explaining concept 39 in the housing category.",
+    "question_ru": "Пример вопроса 39 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 39 в категории housing.",
+    "tags": [
+      "housing",
+      "tag39"
+    ],
+    "examples": "Example case 39 for housing.",
+    "sources": "https://example.com/housing/39"
+  },
+  {
+    "id": 40,
+    "category": "future",
+    "question_en": "Sample question 40 about future?",
+    "answer_en": "This is an English answer explaining concept 40 in the future category.",
+    "question_ru": "Пример вопроса 40 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 40 в категории future.",
+    "tags": [
+      "future",
+      "tag40"
+    ],
+    "examples": "Example case 40 for future.",
+    "sources": "https://example.com/future/40"
+  },
+  {
+    "id": 41,
+    "category": "traffic",
+    "question_en": "Sample question 41 about traffic?",
+    "answer_en": "This is an English answer explaining concept 41 in the traffic category.",
+    "question_ru": "Пример вопроса 41 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 41 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag41"
+    ],
+    "examples": "Example case 41 for traffic.",
+    "sources": "https://example.com/traffic/41"
+  },
+  {
+    "id": 42,
+    "category": "energy",
+    "question_en": "Sample question 42 about energy?",
+    "answer_en": "This is an English answer explaining concept 42 in the energy category.",
+    "question_ru": "Пример вопроса 42 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 42 в категории energy.",
+    "tags": [
+      "energy",
+      "tag42"
+    ],
+    "examples": "Example case 42 for energy.",
+    "sources": "https://example.com/energy/42"
+  },
+  {
+    "id": 43,
+    "category": "iot",
+    "question_en": "Sample question 43 about iot?",
+    "answer_en": "This is an English answer explaining concept 43 in the iot category.",
+    "question_ru": "Пример вопроса 43 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 43 в категории iot.",
+    "tags": [
+      "iot",
+      "tag43"
+    ],
+    "examples": "Example case 43 for iot.",
+    "sources": "https://example.com/iot/43"
+  },
+  {
+    "id": 44,
+    "category": "ecology",
+    "question_en": "Sample question 44 about ecology?",
+    "answer_en": "This is an English answer explaining concept 44 in the ecology category.",
+    "question_ru": "Пример вопроса 44 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 44 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag44"
+    ],
+    "examples": "Example case 44 for ecology.",
+    "sources": "https://example.com/ecology/44"
+  },
+  {
+    "id": 45,
+    "category": "transport",
+    "question_en": "Sample question 45 about transport?",
+    "answer_en": "This is an English answer explaining concept 45 in the transport category.",
+    "question_ru": "Пример вопроса 45 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 45 в категории transport.",
+    "tags": [
+      "transport",
+      "tag45"
+    ],
+    "examples": "Example case 45 for transport.",
+    "sources": "https://example.com/transport/45"
+  },
+  {
+    "id": 46,
+    "category": "safety",
+    "question_en": "Sample question 46 about safety?",
+    "answer_en": "This is an English answer explaining concept 46 in the safety category.",
+    "question_ru": "Пример вопроса 46 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 46 в категории safety.",
+    "tags": [
+      "safety",
+      "tag46"
+    ],
+    "examples": "Example case 46 for safety.",
+    "sources": "https://example.com/safety/46"
+  },
+  {
+    "id": 47,
+    "category": "health",
+    "question_en": "Sample question 47 about health?",
+    "answer_en": "This is an English answer explaining concept 47 in the health category.",
+    "question_ru": "Пример вопроса 47 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 47 в категории health.",
+    "tags": [
+      "health",
+      "tag47"
+    ],
+    "examples": "Example case 47 for health.",
+    "sources": "https://example.com/health/47"
+  },
+  {
+    "id": 48,
+    "category": "education",
+    "question_en": "Sample question 48 about education?",
+    "answer_en": "This is an English answer explaining concept 48 in the education category.",
+    "question_ru": "Пример вопроса 48 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 48 в категории education.",
+    "tags": [
+      "education",
+      "tag48"
+    ],
+    "examples": "Example case 48 for education.",
+    "sources": "https://example.com/education/48"
+  },
+  {
+    "id": 49,
+    "category": "housing",
+    "question_en": "Sample question 49 about housing?",
+    "answer_en": "This is an English answer explaining concept 49 in the housing category.",
+    "question_ru": "Пример вопроса 49 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 49 в категории housing.",
+    "tags": [
+      "housing",
+      "tag49"
+    ],
+    "examples": "Example case 49 for housing.",
+    "sources": "https://example.com/housing/49"
+  },
+  {
+    "id": 50,
+    "category": "future",
+    "question_en": "Sample question 50 about future?",
+    "answer_en": "This is an English answer explaining concept 50 in the future category.",
+    "question_ru": "Пример вопроса 50 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 50 в категории future.",
+    "tags": [
+      "future",
+      "tag50"
+    ],
+    "examples": "Example case 50 for future.",
+    "sources": "https://example.com/future/50"
+  },
+  {
+    "id": 51,
+    "category": "traffic",
+    "question_en": "Sample question 51 about traffic?",
+    "answer_en": "This is an English answer explaining concept 51 in the traffic category.",
+    "question_ru": "Пример вопроса 51 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 51 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag51"
+    ],
+    "examples": "Example case 51 for traffic.",
+    "sources": "https://example.com/traffic/51"
+  },
+  {
+    "id": 52,
+    "category": "energy",
+    "question_en": "Sample question 52 about energy?",
+    "answer_en": "This is an English answer explaining concept 52 in the energy category.",
+    "question_ru": "Пример вопроса 52 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 52 в категории energy.",
+    "tags": [
+      "energy",
+      "tag52"
+    ],
+    "examples": "Example case 52 for energy.",
+    "sources": "https://example.com/energy/52"
+  },
+  {
+    "id": 53,
+    "category": "iot",
+    "question_en": "Sample question 53 about iot?",
+    "answer_en": "This is an English answer explaining concept 53 in the iot category.",
+    "question_ru": "Пример вопроса 53 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 53 в категории iot.",
+    "tags": [
+      "iot",
+      "tag53"
+    ],
+    "examples": "Example case 53 for iot.",
+    "sources": "https://example.com/iot/53"
+  },
+  {
+    "id": 54,
+    "category": "ecology",
+    "question_en": "Sample question 54 about ecology?",
+    "answer_en": "This is an English answer explaining concept 54 in the ecology category.",
+    "question_ru": "Пример вопроса 54 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 54 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag54"
+    ],
+    "examples": "Example case 54 for ecology.",
+    "sources": "https://example.com/ecology/54"
+  },
+  {
+    "id": 55,
+    "category": "transport",
+    "question_en": "Sample question 55 about transport?",
+    "answer_en": "This is an English answer explaining concept 55 in the transport category.",
+    "question_ru": "Пример вопроса 55 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 55 в категории transport.",
+    "tags": [
+      "transport",
+      "tag55"
+    ],
+    "examples": "Example case 55 for transport.",
+    "sources": "https://example.com/transport/55"
+  },
+  {
+    "id": 56,
+    "category": "safety",
+    "question_en": "Sample question 56 about safety?",
+    "answer_en": "This is an English answer explaining concept 56 in the safety category.",
+    "question_ru": "Пример вопроса 56 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 56 в категории safety.",
+    "tags": [
+      "safety",
+      "tag56"
+    ],
+    "examples": "Example case 56 for safety.",
+    "sources": "https://example.com/safety/56"
+  },
+  {
+    "id": 57,
+    "category": "health",
+    "question_en": "Sample question 57 about health?",
+    "answer_en": "This is an English answer explaining concept 57 in the health category.",
+    "question_ru": "Пример вопроса 57 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 57 в категории health.",
+    "tags": [
+      "health",
+      "tag57"
+    ],
+    "examples": "Example case 57 for health.",
+    "sources": "https://example.com/health/57"
+  },
+  {
+    "id": 58,
+    "category": "education",
+    "question_en": "Sample question 58 about education?",
+    "answer_en": "This is an English answer explaining concept 58 in the education category.",
+    "question_ru": "Пример вопроса 58 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 58 в категории education.",
+    "tags": [
+      "education",
+      "tag58"
+    ],
+    "examples": "Example case 58 for education.",
+    "sources": "https://example.com/education/58"
+  },
+  {
+    "id": 59,
+    "category": "housing",
+    "question_en": "Sample question 59 about housing?",
+    "answer_en": "This is an English answer explaining concept 59 in the housing category.",
+    "question_ru": "Пример вопроса 59 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 59 в категории housing.",
+    "tags": [
+      "housing",
+      "tag59"
+    ],
+    "examples": "Example case 59 for housing.",
+    "sources": "https://example.com/housing/59"
+  },
+  {
+    "id": 60,
+    "category": "future",
+    "question_en": "Sample question 60 about future?",
+    "answer_en": "This is an English answer explaining concept 60 in the future category.",
+    "question_ru": "Пример вопроса 60 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 60 в категории future.",
+    "tags": [
+      "future",
+      "tag60"
+    ],
+    "examples": "Example case 60 for future.",
+    "sources": "https://example.com/future/60"
+  },
+  {
+    "id": 61,
+    "category": "traffic",
+    "question_en": "Sample question 61 about traffic?",
+    "answer_en": "This is an English answer explaining concept 61 in the traffic category.",
+    "question_ru": "Пример вопроса 61 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 61 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag61"
+    ],
+    "examples": "Example case 61 for traffic.",
+    "sources": "https://example.com/traffic/61"
+  },
+  {
+    "id": 62,
+    "category": "energy",
+    "question_en": "Sample question 62 about energy?",
+    "answer_en": "This is an English answer explaining concept 62 in the energy category.",
+    "question_ru": "Пример вопроса 62 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 62 в категории energy.",
+    "tags": [
+      "energy",
+      "tag62"
+    ],
+    "examples": "Example case 62 for energy.",
+    "sources": "https://example.com/energy/62"
+  },
+  {
+    "id": 63,
+    "category": "iot",
+    "question_en": "Sample question 63 about iot?",
+    "answer_en": "This is an English answer explaining concept 63 in the iot category.",
+    "question_ru": "Пример вопроса 63 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 63 в категории iot.",
+    "tags": [
+      "iot",
+      "tag63"
+    ],
+    "examples": "Example case 63 for iot.",
+    "sources": "https://example.com/iot/63"
+  },
+  {
+    "id": 64,
+    "category": "ecology",
+    "question_en": "Sample question 64 about ecology?",
+    "answer_en": "This is an English answer explaining concept 64 in the ecology category.",
+    "question_ru": "Пример вопроса 64 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 64 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag64"
+    ],
+    "examples": "Example case 64 for ecology.",
+    "sources": "https://example.com/ecology/64"
+  },
+  {
+    "id": 65,
+    "category": "transport",
+    "question_en": "Sample question 65 about transport?",
+    "answer_en": "This is an English answer explaining concept 65 in the transport category.",
+    "question_ru": "Пример вопроса 65 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 65 в категории transport.",
+    "tags": [
+      "transport",
+      "tag65"
+    ],
+    "examples": "Example case 65 for transport.",
+    "sources": "https://example.com/transport/65"
+  },
+  {
+    "id": 66,
+    "category": "safety",
+    "question_en": "Sample question 66 about safety?",
+    "answer_en": "This is an English answer explaining concept 66 in the safety category.",
+    "question_ru": "Пример вопроса 66 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 66 в категории safety.",
+    "tags": [
+      "safety",
+      "tag66"
+    ],
+    "examples": "Example case 66 for safety.",
+    "sources": "https://example.com/safety/66"
+  },
+  {
+    "id": 67,
+    "category": "health",
+    "question_en": "Sample question 67 about health?",
+    "answer_en": "This is an English answer explaining concept 67 in the health category.",
+    "question_ru": "Пример вопроса 67 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 67 в категории health.",
+    "tags": [
+      "health",
+      "tag67"
+    ],
+    "examples": "Example case 67 for health.",
+    "sources": "https://example.com/health/67"
+  },
+  {
+    "id": 68,
+    "category": "education",
+    "question_en": "Sample question 68 about education?",
+    "answer_en": "This is an English answer explaining concept 68 in the education category.",
+    "question_ru": "Пример вопроса 68 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 68 в категории education.",
+    "tags": [
+      "education",
+      "tag68"
+    ],
+    "examples": "Example case 68 for education.",
+    "sources": "https://example.com/education/68"
+  },
+  {
+    "id": 69,
+    "category": "housing",
+    "question_en": "Sample question 69 about housing?",
+    "answer_en": "This is an English answer explaining concept 69 in the housing category.",
+    "question_ru": "Пример вопроса 69 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 69 в категории housing.",
+    "tags": [
+      "housing",
+      "tag69"
+    ],
+    "examples": "Example case 69 for housing.",
+    "sources": "https://example.com/housing/69"
+  },
+  {
+    "id": 70,
+    "category": "future",
+    "question_en": "Sample question 70 about future?",
+    "answer_en": "This is an English answer explaining concept 70 in the future category.",
+    "question_ru": "Пример вопроса 70 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 70 в категории future.",
+    "tags": [
+      "future",
+      "tag70"
+    ],
+    "examples": "Example case 70 for future.",
+    "sources": "https://example.com/future/70"
+  },
+  {
+    "id": 71,
+    "category": "traffic",
+    "question_en": "Sample question 71 about traffic?",
+    "answer_en": "This is an English answer explaining concept 71 in the traffic category.",
+    "question_ru": "Пример вопроса 71 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 71 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag71"
+    ],
+    "examples": "Example case 71 for traffic.",
+    "sources": "https://example.com/traffic/71"
+  },
+  {
+    "id": 72,
+    "category": "energy",
+    "question_en": "Sample question 72 about energy?",
+    "answer_en": "This is an English answer explaining concept 72 in the energy category.",
+    "question_ru": "Пример вопроса 72 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 72 в категории energy.",
+    "tags": [
+      "energy",
+      "tag72"
+    ],
+    "examples": "Example case 72 for energy.",
+    "sources": "https://example.com/energy/72"
+  },
+  {
+    "id": 73,
+    "category": "iot",
+    "question_en": "Sample question 73 about iot?",
+    "answer_en": "This is an English answer explaining concept 73 in the iot category.",
+    "question_ru": "Пример вопроса 73 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 73 в категории iot.",
+    "tags": [
+      "iot",
+      "tag73"
+    ],
+    "examples": "Example case 73 for iot.",
+    "sources": "https://example.com/iot/73"
+  },
+  {
+    "id": 74,
+    "category": "ecology",
+    "question_en": "Sample question 74 about ecology?",
+    "answer_en": "This is an English answer explaining concept 74 in the ecology category.",
+    "question_ru": "Пример вопроса 74 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 74 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag74"
+    ],
+    "examples": "Example case 74 for ecology.",
+    "sources": "https://example.com/ecology/74"
+  },
+  {
+    "id": 75,
+    "category": "transport",
+    "question_en": "Sample question 75 about transport?",
+    "answer_en": "This is an English answer explaining concept 75 in the transport category.",
+    "question_ru": "Пример вопроса 75 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 75 в категории transport.",
+    "tags": [
+      "transport",
+      "tag75"
+    ],
+    "examples": "Example case 75 for transport.",
+    "sources": "https://example.com/transport/75"
+  },
+  {
+    "id": 76,
+    "category": "safety",
+    "question_en": "Sample question 76 about safety?",
+    "answer_en": "This is an English answer explaining concept 76 in the safety category.",
+    "question_ru": "Пример вопроса 76 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 76 в категории safety.",
+    "tags": [
+      "safety",
+      "tag76"
+    ],
+    "examples": "Example case 76 for safety.",
+    "sources": "https://example.com/safety/76"
+  },
+  {
+    "id": 77,
+    "category": "health",
+    "question_en": "Sample question 77 about health?",
+    "answer_en": "This is an English answer explaining concept 77 in the health category.",
+    "question_ru": "Пример вопроса 77 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 77 в категории health.",
+    "tags": [
+      "health",
+      "tag77"
+    ],
+    "examples": "Example case 77 for health.",
+    "sources": "https://example.com/health/77"
+  },
+  {
+    "id": 78,
+    "category": "education",
+    "question_en": "Sample question 78 about education?",
+    "answer_en": "This is an English answer explaining concept 78 in the education category.",
+    "question_ru": "Пример вопроса 78 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 78 в категории education.",
+    "tags": [
+      "education",
+      "tag78"
+    ],
+    "examples": "Example case 78 for education.",
+    "sources": "https://example.com/education/78"
+  },
+  {
+    "id": 79,
+    "category": "housing",
+    "question_en": "Sample question 79 about housing?",
+    "answer_en": "This is an English answer explaining concept 79 in the housing category.",
+    "question_ru": "Пример вопроса 79 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 79 в категории housing.",
+    "tags": [
+      "housing",
+      "tag79"
+    ],
+    "examples": "Example case 79 for housing.",
+    "sources": "https://example.com/housing/79"
+  },
+  {
+    "id": 80,
+    "category": "future",
+    "question_en": "Sample question 80 about future?",
+    "answer_en": "This is an English answer explaining concept 80 in the future category.",
+    "question_ru": "Пример вопроса 80 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 80 в категории future.",
+    "tags": [
+      "future",
+      "tag80"
+    ],
+    "examples": "Example case 80 for future.",
+    "sources": "https://example.com/future/80"
+  },
+  {
+    "id": 81,
+    "category": "traffic",
+    "question_en": "Sample question 81 about traffic?",
+    "answer_en": "This is an English answer explaining concept 81 in the traffic category.",
+    "question_ru": "Пример вопроса 81 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 81 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag81"
+    ],
+    "examples": "Example case 81 for traffic.",
+    "sources": "https://example.com/traffic/81"
+  },
+  {
+    "id": 82,
+    "category": "energy",
+    "question_en": "Sample question 82 about energy?",
+    "answer_en": "This is an English answer explaining concept 82 in the energy category.",
+    "question_ru": "Пример вопроса 82 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 82 в категории energy.",
+    "tags": [
+      "energy",
+      "tag82"
+    ],
+    "examples": "Example case 82 for energy.",
+    "sources": "https://example.com/energy/82"
+  },
+  {
+    "id": 83,
+    "category": "iot",
+    "question_en": "Sample question 83 about iot?",
+    "answer_en": "This is an English answer explaining concept 83 in the iot category.",
+    "question_ru": "Пример вопроса 83 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 83 в категории iot.",
+    "tags": [
+      "iot",
+      "tag83"
+    ],
+    "examples": "Example case 83 for iot.",
+    "sources": "https://example.com/iot/83"
+  },
+  {
+    "id": 84,
+    "category": "ecology",
+    "question_en": "Sample question 84 about ecology?",
+    "answer_en": "This is an English answer explaining concept 84 in the ecology category.",
+    "question_ru": "Пример вопроса 84 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 84 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag84"
+    ],
+    "examples": "Example case 84 for ecology.",
+    "sources": "https://example.com/ecology/84"
+  },
+  {
+    "id": 85,
+    "category": "transport",
+    "question_en": "Sample question 85 about transport?",
+    "answer_en": "This is an English answer explaining concept 85 in the transport category.",
+    "question_ru": "Пример вопроса 85 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 85 в категории transport.",
+    "tags": [
+      "transport",
+      "tag85"
+    ],
+    "examples": "Example case 85 for transport.",
+    "sources": "https://example.com/transport/85"
+  },
+  {
+    "id": 86,
+    "category": "safety",
+    "question_en": "Sample question 86 about safety?",
+    "answer_en": "This is an English answer explaining concept 86 in the safety category.",
+    "question_ru": "Пример вопроса 86 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 86 в категории safety.",
+    "tags": [
+      "safety",
+      "tag86"
+    ],
+    "examples": "Example case 86 for safety.",
+    "sources": "https://example.com/safety/86"
+  },
+  {
+    "id": 87,
+    "category": "health",
+    "question_en": "Sample question 87 about health?",
+    "answer_en": "This is an English answer explaining concept 87 in the health category.",
+    "question_ru": "Пример вопроса 87 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 87 в категории health.",
+    "tags": [
+      "health",
+      "tag87"
+    ],
+    "examples": "Example case 87 for health.",
+    "sources": "https://example.com/health/87"
+  },
+  {
+    "id": 88,
+    "category": "education",
+    "question_en": "Sample question 88 about education?",
+    "answer_en": "This is an English answer explaining concept 88 in the education category.",
+    "question_ru": "Пример вопроса 88 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 88 в категории education.",
+    "tags": [
+      "education",
+      "tag88"
+    ],
+    "examples": "Example case 88 for education.",
+    "sources": "https://example.com/education/88"
+  },
+  {
+    "id": 89,
+    "category": "housing",
+    "question_en": "Sample question 89 about housing?",
+    "answer_en": "This is an English answer explaining concept 89 in the housing category.",
+    "question_ru": "Пример вопроса 89 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 89 в категории housing.",
+    "tags": [
+      "housing",
+      "tag89"
+    ],
+    "examples": "Example case 89 for housing.",
+    "sources": "https://example.com/housing/89"
+  },
+  {
+    "id": 90,
+    "category": "future",
+    "question_en": "Sample question 90 about future?",
+    "answer_en": "This is an English answer explaining concept 90 in the future category.",
+    "question_ru": "Пример вопроса 90 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 90 в категории future.",
+    "tags": [
+      "future",
+      "tag90"
+    ],
+    "examples": "Example case 90 for future.",
+    "sources": "https://example.com/future/90"
+  },
+  {
+    "id": 91,
+    "category": "traffic",
+    "question_en": "Sample question 91 about traffic?",
+    "answer_en": "This is an English answer explaining concept 91 in the traffic category.",
+    "question_ru": "Пример вопроса 91 про traffic?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 91 в категории traffic.",
+    "tags": [
+      "traffic",
+      "tag91"
+    ],
+    "examples": "Example case 91 for traffic.",
+    "sources": "https://example.com/traffic/91"
+  },
+  {
+    "id": 92,
+    "category": "energy",
+    "question_en": "Sample question 92 about energy?",
+    "answer_en": "This is an English answer explaining concept 92 in the energy category.",
+    "question_ru": "Пример вопроса 92 про energy?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 92 в категории energy.",
+    "tags": [
+      "energy",
+      "tag92"
+    ],
+    "examples": "Example case 92 for energy.",
+    "sources": "https://example.com/energy/92"
+  },
+  {
+    "id": 93,
+    "category": "iot",
+    "question_en": "Sample question 93 about iot?",
+    "answer_en": "This is an English answer explaining concept 93 in the iot category.",
+    "question_ru": "Пример вопроса 93 про iot?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 93 в категории iot.",
+    "tags": [
+      "iot",
+      "tag93"
+    ],
+    "examples": "Example case 93 for iot.",
+    "sources": "https://example.com/iot/93"
+  },
+  {
+    "id": 94,
+    "category": "ecology",
+    "question_en": "Sample question 94 about ecology?",
+    "answer_en": "This is an English answer explaining concept 94 in the ecology category.",
+    "question_ru": "Пример вопроса 94 про ecology?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 94 в категории ecology.",
+    "tags": [
+      "ecology",
+      "tag94"
+    ],
+    "examples": "Example case 94 for ecology.",
+    "sources": "https://example.com/ecology/94"
+  },
+  {
+    "id": 95,
+    "category": "transport",
+    "question_en": "Sample question 95 about transport?",
+    "answer_en": "This is an English answer explaining concept 95 in the transport category.",
+    "question_ru": "Пример вопроса 95 про transport?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 95 в категории transport.",
+    "tags": [
+      "transport",
+      "tag95"
+    ],
+    "examples": "Example case 95 for transport.",
+    "sources": "https://example.com/transport/95"
+  },
+  {
+    "id": 96,
+    "category": "safety",
+    "question_en": "Sample question 96 about safety?",
+    "answer_en": "This is an English answer explaining concept 96 in the safety category.",
+    "question_ru": "Пример вопроса 96 про safety?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 96 в категории safety.",
+    "tags": [
+      "safety",
+      "tag96"
+    ],
+    "examples": "Example case 96 for safety.",
+    "sources": "https://example.com/safety/96"
+  },
+  {
+    "id": 97,
+    "category": "health",
+    "question_en": "Sample question 97 about health?",
+    "answer_en": "This is an English answer explaining concept 97 in the health category.",
+    "question_ru": "Пример вопроса 97 про health?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 97 в категории health.",
+    "tags": [
+      "health",
+      "tag97"
+    ],
+    "examples": "Example case 97 for health.",
+    "sources": "https://example.com/health/97"
+  },
+  {
+    "id": 98,
+    "category": "education",
+    "question_en": "Sample question 98 about education?",
+    "answer_en": "This is an English answer explaining concept 98 in the education category.",
+    "question_ru": "Пример вопроса 98 про education?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 98 в категории education.",
+    "tags": [
+      "education",
+      "tag98"
+    ],
+    "examples": "Example case 98 for education.",
+    "sources": "https://example.com/education/98"
+  },
+  {
+    "id": 99,
+    "category": "housing",
+    "question_en": "Sample question 99 about housing?",
+    "answer_en": "This is an English answer explaining concept 99 in the housing category.",
+    "question_ru": "Пример вопроса 99 про housing?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 99 в категории housing.",
+    "tags": [
+      "housing",
+      "tag99"
+    ],
+    "examples": "Example case 99 for housing.",
+    "sources": "https://example.com/housing/99"
+  },
+  {
+    "id": 100,
+    "category": "future",
+    "question_en": "Sample question 100 about future?",
+    "answer_en": "This is an English answer explaining concept 100 in the future category.",
+    "question_ru": "Пример вопроса 100 про future?",
+    "answer_ru": "Это русский ответ, объясняющий концепцию 100 в категории future.",
+    "tags": [
+      "future",
+      "tag100"
+    ],
+    "examples": "Example case 100 for future.",
+    "sources": "https://example.com/future/100"
+  }
+]
