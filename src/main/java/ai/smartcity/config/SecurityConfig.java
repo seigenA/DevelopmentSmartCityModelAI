@@ -37,7 +37,11 @@ public class SecurityConfig {
                                 "/swagger-ui/**",
                                 "/v3/api-docs/**",
                                 "/v3/api-docs",
-                                "/v3/api-docs.yaml"
+                                "/v3/api-docs.yaml",
+
+                                // ==== ТОЛЬКО ДЛЯ ДИАГНОСТИКИ 403 (временно) ====
+                                "/api/sensors/*/reaction",
+                                "/api/sensors/*/comments"
                         ).permitAll()
                         .anyRequest().authenticated()
                 )

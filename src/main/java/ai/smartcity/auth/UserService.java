@@ -32,4 +32,6 @@ public class UserService implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return findByUsername(username);
     }
+    public User save(User u){ return repo.save(u); }
+
 }

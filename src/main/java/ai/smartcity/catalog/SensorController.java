@@ -29,4 +29,19 @@ public class SensorController {
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id, Authentication auth){ service.delete(id, auth); }
+
+    @GetMapping("/stats")
+    public List<SensorService.SensorStats> allWithStats(){ return service.findAllWithStats(); }
+
+    @GetMapping(params = {"!id"})
+    public List<Sensor> filter(
+            @RequestParam(required = false) String search,
+            @RequestParam(required = false) String tag,
+            @RequestParam(required = false) Integer rating,
+            @RequestParam(required = false, name = "sort") String sort // rating|date|name + _desc
+    ){
+        return service.filter(search, tag, rating, sort);
+    }
+
 }
+

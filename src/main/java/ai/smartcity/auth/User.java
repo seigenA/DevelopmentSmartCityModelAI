@@ -22,6 +22,9 @@ public class User implements UserDetails {
 
     @Column(nullable = false) @NotBlank
     private String passwordHash;
+    private String displayName;
+    private String email;
+    private String avatarUrl;
 
     // UserDetails
     @Override public Collection<? extends GrantedAuthority> getAuthorities() { return List.of(); }
