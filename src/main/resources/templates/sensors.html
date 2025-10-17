@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/_layout :: head('SmartCity · Sensors')"></head>
+<body>
+<nav th:replace="fragments/_layout :: navbar('sensors')"></nav>
+
+<section class="container my-5">
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <form class="row g-3 align-items-end" method="get" action="/sensors">
+                <div class="col-12 col-md-4">
+                    <label class="form-label">Search</label>
+                    <input class="form-control" name="search" th:value="${search}" placeholder="name, description, tags">
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="form-label">Tag</label>
+                    <input class="form-control" name="tag" th:value="${tag}" placeholder="e.g. air">
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="form-label">Min rating</label>
+                    <input type="number" min="1" max="5" class="form-control" name="rating_min" th:value="${ratingMin}">
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="form-label">Sort</label>
+                    <select class="form-select" name="sort" th:value="${sort}">
+                        <option value="">None</option>
+                        <option value="rating_desc">Rating ↓</option>
+                        <option value="date_desc">Date ↓</option>
+                        <option value="name">Name ↑</option>
+                        <option value="year_desc">Year ↓</option>
+                    </select>
+                </div>
+                <div class="col-6 col-md-2">
+                    <button class="btn btn-primary w-100">Apply</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-12" th:if="${#lists.isEmpty(items)}">
+            <div class="alert alert-light border text-center">No sensors found for current filters.</div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4" th:each="s : ${items}">
+            <div class="card h-100 shadow-sm sensor-card">
+                <div class="ratio ratio-16x9" th:if="${s.mediaUrl != null}">
+                    <img th:src="${s.mediaUrl}" class="card-img-top object-fit-cover" alt="media">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title mb-1" th:text="${s.name}">Sensor</h5>
+                    <div class="text-muted small mb-2">
+                        <span th:text="${s.type}">TYPE</span> · <span th:text="${s.year}">2024</span>
+                        <span th:if="${s.rating != null}"> · ⭐ <span th:text="${s.rating}">4</span></span>
+                    </div>
+                    <p class="card-text" th:text="${s.description}">Description...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="small text-muted" th:text="${s.tags}">tags</div>
+                        <a href="/swagger-ui/index.html" class="btn btn-outline-primary btn-sm">Open in API</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer th:replace="fragments/_layout :: footer"></footer>
+</body>
+</html>

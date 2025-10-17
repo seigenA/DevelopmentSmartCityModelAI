@@ -38,9 +38,12 @@ public class SensorController {
             @RequestParam(required = false) String search,
             @RequestParam(required = false) String tag,
             @RequestParam(required = false) Integer rating,
-            @RequestParam(required = false, name = "sort") String sort // rating|date|name + _desc
+            @RequestParam(required = false, name = "rating_min") Integer ratingMin,
+            @RequestParam(required = false, name = "year_min") Integer yearMin,
+            @RequestParam(required = false, name = "year_max") Integer yearMax,
+            @RequestParam(required = false, name = "sort") String sort // "rating_desc,date_asc"
     ){
-        return service.filter(search, tag, rating, sort);
+        return service.filterAdvanced(search, tag, rating, ratingMin, yearMin, yearMax, sort);
     }
 
 }

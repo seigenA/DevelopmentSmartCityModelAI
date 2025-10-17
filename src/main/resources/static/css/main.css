@@ -1,0 +1,21 @@
+:root{
+    --tile-bg: #f8f9fa;
+}
+.stat-tile{
+    background: var(--tile-bg);
+    border-radius: 14px;
+    padding: 14px;
+}
+.stat-value{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.stat-label{
+    color: #6c757d;
+    font-size: .9rem;
+}
+.sensor-card .card-img-top{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

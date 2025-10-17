@@ -102,40 +102,55 @@ public class SensorService {
     }
 
     // ---------- Фильтры / поиск / сортировка ----------
-    public List<Sensor> filter(String search, String tag, Integer rating, String sort) {
+    public List<Sensor> filterAdvanced(String search, String tag, Integer rating,
+                                       Integer ratingMin, Integer yearMin, Integer yearMax,
+                                       String sort) {
         var stream = repo.findAll().stream();
 
         if (search != null && !search.isBlank()) {
             String q = search.toLowerCase();
             stream = stream.filter(x ->
-                    (x.getName() != null && x.getName().toLowerCase().contains(q)) ||
-                            (x.getDescription() != null && x.getDescription().toLowerCase().contains(q)) ||
-                            (x.getTags() != null && x.getTags().toLowerCase().contains(q))
+                    (x.getName()!=null && x.getName().toLowerCase().contains(q)) ||
+                            (x.getDescription()!=null && x.getDescription().toLowerCase().contains(q)) ||
+                            (x.getTags()!=null && x.getTags().toLowerCase().contains(q))
             );
         }
         if (tag != null && !tag.isBlank()) {
             String t = tag.toLowerCase();
-            stream = stream.filter(x -> x.getTags() != null && x.getTags().toLowerCase().contains(t));
+            stream = stream.filter(x -> x.getTags()!=null && x.getTags().toLowerCase().contains(t));
         }
-        if (rating != null) {
-            stream = stream.filter(x -> x.getRating() != null && x.getRating().equals(rating));
-        }
+        if (rating != null) stream = stream.filter(x -> x.getRating()!=null && x.getRating().equals(rating));
+        if (ratingMin != null) stream = stream.filter(x -> x.getRating()!=null && x.getRating() >= ratingMin);
+        if (yearMin != null) stream = stream.filter(x -> x.getYear() >= yearMin);
+        if (yearMax != null) stream = stream.filter(x -> x.getYear() <= yearMax);
 
         List<Sensor> list = stream.toList();
 
-        if (sort != null) {
-            boolean desc = sort.endsWith("_desc");
-            String key = desc ? sort.substring(0, sort.length() - 5) : sort;
-            Comparator<Sensor> cmp = switch (key) {
-                case "rating" -> Comparator.comparing(
-                        (Sensor s) -> s.getRating() == null ? -1 : s.getRating());
-                case "date" -> Comparator.comparing(Sensor::getInstalledAt,
-                        Comparator.nullsLast(Comparator.naturalOrder()));
-                case "name" -> Comparator.comparing(Sensor::getName,
-                        Comparator.nullsLast(String::compareToIgnoreCase));
-                default -> null;
-            };
-            if (cmp != null) list = list.stream().sorted(desc ? cmp.reversed() : cmp).toList();
+        if (sort != null && !sort.isBlank()) {
+            // поддержим мульти-сортировку: "rating_desc,date_asc"
+            String[] parts = sort.split(",");
+            java.util.Comparator<Sensor> total = null;
+
+            for (String p : parts) {
+                p = p.trim();
+                boolean desc = p.endsWith("_desc");
+                String key = p.replace("_desc","").replace("_asc","");
+                java.util.Comparator<Sensor> cmp = switch (key) {
+                    case "rating" -> java.util.Comparator.comparing(
+                            (Sensor s) -> s.getRating()==null ? -1 : s.getRating());
+                    case "date" -> java.util.Comparator.comparing(Sensor::getInstalledAt,
+                            java.util.Comparator.nullsLast(java.util.Comparator.naturalOrder()));
+                    case "name" -> java.util.Comparator.comparing(Sensor::getName,
+                            java.util.Comparator.nullsLast(String::compareToIgnoreCase));
+                    case "year" -> java.util.Comparator.comparing(Sensor::getYear);
+                    default -> null;
+                };
+                if (cmp != null) {
+                    if (desc) cmp = cmp.reversed();
+                    total = (total == null) ? cmp : total.thenComparing(cmp);
+                }
+            }
+            if (total != null) list = list.stream().sorted(total).toList();
         }
         return list;
     }

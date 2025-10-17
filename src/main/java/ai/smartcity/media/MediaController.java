@@ -51,4 +51,28 @@ public class MediaController {
         Resource res = new UrlResource(p.toUri());
         return ResponseEntity.ok(res);
     }
+    @PostMapping(value = "/upload/multi", consumes = "multipart/form-data")
+    public Map<String,Object> uploadMulti(@RequestPart("files") java.util.List<MultipartFile> files) throws IOException {
+        var result = new java.util.ArrayList<Map<String,String>>();
+        for (var file : files) {
+            var one = upload(file); // существующий метод
+            // миниатюра, только для изображений:
+            String url = one.get("url");
+            if (url.endsWith(".jpg") || url.endsWith(".jpeg") || url.endsWith(".png")) {
+                String name = url.substring(url.lastIndexOf('/')+1);
+                Path src = Paths.get(mediaDirStr).resolve(name).normalize();
+                String thumbName = "thumb-" + name;
+                Path dst = Paths.get(mediaDirStr).resolve(thumbName);
+                try (var in = java.nio.file.Files.newInputStream(src);
+                     var out = java.nio.file.Files.newOutputStream(dst)) {
+                    net.coobird.thumbnailator.Thumbnails.of(in).size(320, 240).toOutputStream(out);
+                }
+                result.add(Map.of("url", url, "thumbUrl", "/api/media/files/" + thumbName));
+            } else {
+                result.add(one);
+            }
+        }
+        return Map.of("files", result);
+    }
+
 }

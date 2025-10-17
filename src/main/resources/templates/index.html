@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/_layout :: head('SmartCity · Dashboard')}"></head>
+<body>
+<nav th:replace="~{fragments/_layout :: navbar('home')}"></nav>
+
+<section class="container my-5">
+    <div class="row g-4">
+        <div class="col-12 col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title mb-4">System Overview</h5>
+                    <div class="row text-center g-3">
+                        <div class="col-6 col-md-3">
+                            <div class="stat-tile">
+                                <div class="stat-value" th:text="${overview.totalSensors}">0</div>
+                                <div class="stat-label">Sensors</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-tile">
+                                <div class="stat-value" th:text="${#numbers.formatDecimal(overview.avgRating,1,1)}">0.0</div>
+                                <div class="stat-label">Avg. Rating</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-tile">
+                                <div class="stat-value" th:text="${overview.totalComments}">0</div>
+                                <div class="stat-label">Comments</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="stat-tile">
+                                <div class="stat-value" th:text="${#maps.size(overview.byType)}">0</div>
+                                <div class="stat-label">Categories</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4"/>
+
+                    <h6 class="mb-3">By Sensor Type</h6>
+                    <div class="row g-2">
+                        <div class="col-auto" th:each="t : ${overview.byType.entrySet()}">
+  <span class="badge bg-secondary-subtle text-secondary-emphasis px-3 py-2">
+    <span th:text="${t.key}">TYPE</span>:
+    <b th:text="${t.value}">0</b>
+  </span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-4 mb-2">Top Authors</h6>
+                    <ol class="mb-0">
+                        <li th:each="a : ${overview.topAuthors}">
+                            <span th:text="${a.get('username')}">user</span> —
+                            <span th:text="${a.get('count')}">0</span> sensors
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Top Rated Sensors</h5>
+                    <div class="list-group list-group-flush">
+                        <a th:each="s : ${top}" href="/sensors"
+                           class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                            <div>
+                                <div class="fw-semibold" th:text="${s.name}">Sensor</div>
+                                <small class="text-muted">
+                                    <span th:text="${s.type}">AIR</span> ·
+                                    <span th:text="${s.year}">2024</span>
+                                </small>
+                            </div>
+                            <span class="badge bg-warning text-dark" th:text="${s.rating != null ? s.rating : '-'}">4</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer th:replace="fragments/_layout :: footer"></footer>
+</body>
+</html>
